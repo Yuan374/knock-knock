@@ -920,15 +920,6 @@ def download_genome_and_build_indices(base_dir, genome_name, num_threads=8):
         '-P', str(fasta_dir),
     ]
 
-    ###
-    logging.info('Moving hg19...')
-    if genome_name == 'hg19':
-        wget_command =[
-        'mv',
-        '\\wsl.localhost\Ubuntu\home\yuan\AmgenProject\hg19.fa.gz',
-        str(fasta_dir)
-        ]
-    ###
     subprocess.run(wget_command, check=True)
 
     logging.info('Uncompressing...')
