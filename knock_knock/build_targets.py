@@ -892,7 +892,7 @@ def build_indices(base_dir, name, num_threads=1, **STAR_index_kwargs):
 def download_genome_and_build_indices(base_dir, genome_name, num_threads=8):
     urls = {
         'hg38': 'http://hgdownload.cse.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz',
-        'hg19': 'http://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz',
+        'hg19': 'https://hgdownload.cse.ucsc.edu/goldenpath/hg19/bigZips/hg19.fa.gz',
         'bosTau7': 'http://hgdownload.cse.ucsc.edu/goldenPath/bosTau7/bigZips/bosTau7.fa.gz',
         'macFas5': 'http://hgdownload.cse.ucsc.edu/goldenPath/macFas5/bigZips/macFas5.fa.gz',
         'mm10': 'ftp://ftp.ensembl.org/pub/release-98/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.toplevel.fa.gz',
