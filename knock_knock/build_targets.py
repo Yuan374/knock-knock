@@ -921,6 +921,7 @@ def download_genome_and_build_indices(base_dir, genome_name, num_threads=8):
     ]
 
     ###
+    logging.info('Moving hg19...')
     if genome_name == 'hg19':
         wget_command =[
         'mv',
